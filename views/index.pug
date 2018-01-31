@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  div
+    each item in data.expressions
+      p #{item.exp} = #{item.res}
+  p id = #{data.id}
+  p passed = #{data.passed}
